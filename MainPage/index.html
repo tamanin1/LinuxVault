@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../IMGS/icon.ico">
+    <link rel="stylesheet" href="style1.css">
+    <title>Linux Command Vault</title>
+</head>
+
+<body>
+
+       <header>
+            <h2 class="logo">Linux Command Vault</h2>
+            <nav class="navigation">
+                <a href="#">Conteúdos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#login">Login</a>
+            </nav>
+       </header>
+
+       <section class="hero">
+        <div class="content">
+            <h3>Aprender a usar o Linux</h3>
+            <h1>Nunca foi tão fácil...</h1>
+            <button>COMECE AGORA</button>
+        </div>
+
+       </section>
+            
+       <section class="home" id="login">
+            <div class="content">
+                <h2>Imersão ao mundo Linux</h2>
+                <p>Comece agora!</p>
+                <a href="#">DOWNLOAD</a>
+            </div>
+
+            <div class="wrapper-login">
+                <h2>Member Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon
+                        name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon
+                        name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Enter your password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">
+                        Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-link">
+                        <p>Not a member? <a href="#">Sign up now</a></p>
+                    </div>
+                </form> 
+            </div>
+       </section>
+
+       <section class="sobre" id="sobre" style="background-color: #134E75;">
+        <!--image slider start-->
+            <div>
+                <h1 style="font-size: 2.5em;color: #fff;text-align: center;letter-spacing: .1cm;
+                text-shadow: 0 0 10px rgba(0, 0, 0, .8);">Um pouco mais sobre a equipe:</h1>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="../IMGS/Flavia Antonieli de Souza.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../IMGS/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../IMGS/cardsSite.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../IMGS/Flavia Antonieli de Souza (3).jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation start-->
+            </div>
+        <!--image slider end-->
+       </section>
+       <section class="ending" style="background-color: #134E75;height: 50px;"></section>
+        
+        <footer class="final" style="background-color: #0c0a48;height: 30px;">
+            <section class="socialmedia">
+                <div class="redes">
+                    <span>Conheça nossas redes sociais: </span>
+                </div>
+                <div class="icons">
+                    <a class="links" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a class="links" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a class="links" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+            </section>
+        </footer>
+
+    <!--Script for image slide, aparently not working correctly-->
+
+       <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+       </script>
+
+    <!--That's some problem in the css config I think, the slides are not centered in the screen (is this a problem?)-->
+
+    <!--Script try to make the navbar smoother in scrolling-->
+
+       <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+       </script>
+
+    <!--Script try to make the navbar smoother in scrolling-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
