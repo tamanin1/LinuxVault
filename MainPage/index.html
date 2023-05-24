@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="../IMGS/icon.ico">
     <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
     <title>Linux Command Vault</title>
 </head>
 
@@ -24,7 +25,7 @@
         <div class="content">
             <h3>Aprender a usar o Linux</h3>
             <h1>Nunca foi tão fácil...</h1>
-            <button>COMECE AGORA</button>
+            <a class="button" href="#login">COMECE AGORA</a>
         </div>
 
        </section>
@@ -33,32 +34,34 @@
             <div class="content">
                 <h2>Imersão ao mundo Linux</h2>
                 <p>Comece agora!</p>
-                <a href="#">DOWNLOAD</a>
+                <a href="../JDownloadPage/download.html">DOWNLOAD</a>
             </div>
 
             <div class="wrapper-login">
-                <h2>Member Login</h2>
+                <h2>Entrar</h2>
                 <form action="#">
                     <div class="input-box">
                         <span class="icon"><ion-icon
                         name="mail"></ion-icon></span>
                         <input type="email" required>
-                        <label>Enter your email</label>
+                        <label>Email</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon
                         name="lock-closed"></ion-icon></span>
                         <input type="password" required>
-                        <label>Enter your password</label>
+                        <label>Senha</label>
                     </div>
                     <div class="remember-forgot">
                         <label><input type="checkbox">
-                        Remember me</label>
-                        <a href="#">Forgot password?</a>
+                        Manter-me conectado</label>
+                        <a href="#">Esqueceu sua senha?</a>
                     </div>
-                    <button type="submit" class="btn">Login</button>
+                    <form action="../PerfilManseiraMP/manseira.html">
+                    <button type="submit" class="btn" formaction="../PerfilManseiraMP/manseira.html">Entrar</button>
+                    </form>
                     <div class="register-link">
-                        <p>Not a member? <a href="#">Sign up now</a></p>
+                        <p>Primeira vez por aqui? <a href="../SignUp/signup.html">Cadastre-se agora</a></p>
                     </div>
                 </form> 
             </div>
@@ -83,7 +86,7 @@
                     <img src="../IMGS/Flavia Antonieli de Souza.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <img src="../IMGS/2.jpg" alt="">
+                    <img src="../IMGS/Amanda.jpg" alt="">
                 </div>
                 <div class="slide">
                     <img src="../IMGS/cardsSite.jpg" alt="">
@@ -146,7 +149,7 @@
         }, 5000);
        </script>
 
-    <!--That's some problem in the css config I think, the slides are not centered in the screen (is this a problem?)-->
+    <!---->
 
     <!--Script try to make the navbar smoother in scrolling-->
 
@@ -157,7 +160,7 @@
         })
        </script>
 
-    <!--Script try to make the navbar smoother in scrolling-->
+    <!---->
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
