@@ -180,6 +180,12 @@ header.sticky .navigation a:hover {
     width: 1100px;
 }
 
+.wrapper8 {
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 1100px;
+}
+
 .left {
     max-width: 320px;
     float: left;
