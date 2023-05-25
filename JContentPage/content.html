@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../IMGS/logo branca.png">
+    <link rel="stylesheet" href="content.css">
+    <title>Conteúdos</title>
+</head>
+<body>
+    <header>
+        <a href="../MainPage/index.html"><img src="../IMGS/logo branca.png" class="home"></a>
+        <h2 class="logo">Conteúdos</h2>
+        <nav class="navigation">
+            <a href="../MainPage/index.html#sobre">Sobre</a>
+            <a href="../ProfilePage/profile.html">Minha Conta</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="content">
+            <div class="intro">
+                <p class="intx" id="intx">O que é um comando Linux?</p>
+                <p class="intd">Um comando Linux é um programa que você executa diretamente na linha de comando (CLI). 
+                    Isto é, você digita o comando na CLI e, em seguida, a interface processa aquela instrução e realiza 
+                    o comando solicitado.</p>
+                <p class="mid">No Linux, os comandos são executados no Terminal — basta pressionar Enter ao terminar de digitar (ou copiar) o comando desejado. 
+                    Você pode executar comandos para realizar uma série de tarefas, como instalação de pacotes,
+                     gerenciamento de usuários e manipulação de arquivos.</p>
+                     <p class="mid">As três partes principais de um comando são:</p>
+                <ol class="list" type="a">
+                    <li>CommandName (nome). É a regra em si que você quer executar. </li>
+                    <li>Flag (opção). É um modificador para a operação do comando. Você pode incluí-lo no comando usando um hífen (-) ou dois (–).</li>
+                    <li>Argument (parâmetro). Serve para adicionar informações ou contexto ao comando.</li>
+                </ol>
+                <p class="midd">Comandos mais utilizados </p>
+                <ol class="list" type="a">
+                    <li>pwd: encontra o caminho completo do diretório atual</li>
+                    <li>cd: permite navegar até determinada pasta.</li>
+                    <li>ls: lista todos os arquivos e pastas dentro de um diretório.</li>
+                    <li>cat: lista os conteúdos de um arquivo de texto na saída padrão (sdout).</li>
+                    <li>cp: copia arquivos do diretório atual para uma pasta diferente.</li>
+                    <li>mv: pode ser usado para mover ou renomear arquivos.</li>
+                    <li>mkdir: cria um novo diretório.</li>
+                    <li>rm: remove arquivos e diretórios.</li>
+                    <li>sudo: executa um comando como superusuário.</li>
+                    <li>find: para buscar arquivos em diretórios.</li>
+            </div>
+            <div class="wrapper">
+                <div>
+                    <h2>Tutorial em Vídeo</h2>
+                    <p>No vídeo abaixo, você pode conferir alguns dos 15 comandos Linux mais úteis para iniciantes.</p>
+                </div>
+                <iframe class="left1" width="560" height="315" src="https://www.youtube.com/embed/bEnW2FyG6JA"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="wrapper1">
+                <div>
+                    <h2>Hierarquia de Diretórios no Linux</h2>
+                        <p>A necessidade de guardar informações em objetos que pudessem ser acessados posteriormente de uma forma organizada vem de longe nos sistemas operacionais.
+                     Para isso foram criados os sistemas de arquivos. Cada sistema de arquivo mantém uma hierarquia de diretórios que define sua organização e utilidade, 
+                     e no Linux não é diferente. Basicamente no Linux tudo é um arquivo, 
+                     que dependendo do seu tipo, pode se tornar um arquivo comum, um diretório, um link, 
+                     um socket, um condutor, um descritor de dispositivos, etc.</p>
+                       <p class="mid"> Nos sistemas de arquivos de uma forma geral, os objetos são organizados de uma forma hierárquica e 
+                        cada objeto possui uma identificação única dentro de uma tabela.</p>
+                        <p class="mid">Como exemplo, vejamos o sistema operacional Windows da Microsoft: ele organiza seus arquivos em uma partição nomeada como drive “C:\”,
+                             e nela temos o diretório Windows, que contém o sistema operacional; o diretório “Arquivos de Programas”, 
+                             que contém a maioria dos produtos instalados, e assim por diante. Os arquivos ficam divididos em diretórios e
+                              subdiretórios diferentes por uma questão de afinidade e organização. Da mesma maneira temos uma organização no Linux. </p>
+                        <p class="mid">Fluxograma para identificar onde você se encontra em determinada etapa do processo com base na hierarquia de diretórios.</p>
+                            <img class="center" src="../IMGS/linux1.jpeg">
+                </div>
+            </div>
+            <div class="wrapper2">
+                <div>
+                    <h2>Comandos de superusuário (Sudo ou Su)</h2>
+                    <p>A conta root é também chamada de super usuário, este é um login que não possui restrições de segurança. 
+                        A conta root somente deve ser usada para fazer a administração do sistema, 
+                        e usada o menor tempo possível.</p>
+                    <img class="left2" src="../IMGS/Sudo.jpg" alt="">
+                </div>
+            </div>
+            <div class="wrapper3">
+                <div>
+                    <h2>Comandos de Controle e Acesso</h2>
+                    <ol class="list" type="a">
+                        <li>exit: Terminar a sessão;</li>
+                        <li>logout: Deslogar, ou seja, terminar a sessão atual;</li>
+                        <li>passwd: Mudar a senha do nosso utilizador (usuário logado);</li>
+                        <li>rlogin: Logar de forma segura em outro sistema Linux;</li>
+                        <li>ssh: Sessão segura que nos permite logar num servidor remoto.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper4">
+                <div>
+                    <h2>Comandos de Comunicações</h2>
+                    <ol class="list" type="a">
+                        <li>mail: Enviar e receber emails;</li>
+                        <li>mesg: Permitir ou negar mensagens de terminal e pedidos de conversação;</li>
+                        <li>pine: Outra forma de enviar e receber emails, uma ferramenta rápida e prática;</li>
+                        <li>talk: Falar com outros utilizadores que estejam logados no momento;</li>
+                        <li>write: Escrever para outros utilizadores que estejam logados no momento.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper5">
+                <div>
+                    <h2>Comandos de Ajuda e Documentação</h2>
+                    <ol class="list" type="a">
+                        <li>apropos: Localiza comandos por pesquisa de palavra-chave;</li>
+                        <li>info: Abre o explorador de informações;</li>
+                        <li>man: Manual muito completo; </li>
+                        <li>whatis: Descreve o que um determinado comando é/faz;</li>
+                        <li>whereis: Localizar a página de ajuda (man page), código fonte, ou arquivos binários, 
+                            de um determinado programa.;</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper6">
+                <div>
+                    <h2>Comandos de Gestão de Arquivos e Directorias</h2>
+                    <ol class="list" type="1">
+                        <li>cd: Mudar de diretório atual, como por exemplo cd diretório, cd .., cd /</li>
+                        <li>chmod: Mudar a proteção de um arquivo ou diretório, como por exemplo chmod 777, 
+                            parecido com o attrib do MS-DOS</li>
+                        <li>chown: Mudar o dono ou grupo de um arquivo ou diretório, vem de change owner</li>
+                        <li>chgrp: Mudar o grupo de um arquivo ou diretório</li>
+                        <li>cmp: Compara dois arquivos</li>
+                        <li>comm: Seleciona ou rejeita linhas comuns a dois arquivos selecionados</li>
+                        <li>cp: Copia arquivos, como o copy do MS-DOS</li>
+                        <li>crypt: Encripta ou Descripta arquivos (apenas CCWF)</li>
+                        <li>diff: Compara o conteúdo de dois arquivos ASCII</li>
+                        <li>file: Determina o tipo de arquivo</li>
+                        <li>grep: Procura um arquivo por um padrão, sendo um filtro muito útil e usado, 
+                            por exemplo um cat a.txt | grep ola irá mostrar-nos apenas as linhas do arquivo 
+                            a.txt que contenham a palavra “ola”</li>
+                        <li>gzip: Comprime ou expande arquivo</li>
+                        <li>ln: Cria um link a um arquivo</li>
+                        <li>ls: Lista o conteúdo de uma diretório, semelhante ao comando dir no MS-DOS</li>
+                        <li>lsof: Lista os arquivos abertos, vem de list open files</li>
+                        <li>mkdir: Cria uma diretório, vem de make directory”</li>
+                        <li>mv: Move ou renomeia arquivos ou diretórios</li>
+                        <li>pwd: Mostra-nos o caminho por inteiro da diretório em que nos encontramos em dado momento, 
+                            ou seja um pathname</li>
+                        <li>quota: Mostra-nos o uso do disco e os limites</li>
+                        <li>rm: Apaga arquivos, vem de remove, e é semelhante ao comando del no MS-DOS, é preciso ter 
+                            cuidado com o comando rm * pois apaga tudo sem confirmação por defeito</li>
+                        <li>rmdir: Apaga diretório, vem de remove directory</li>
+                        <li>stat: Mostra o estado de um arquivo,
+                             útil para saber por exemplo a hora e data do último acesso ao mesmo</li>
+                        <li>sync: Faz um flush aos buffers do sistema de arquivos, sincroniza os dados no disco com a memória,
+                             ou seja escreve todos os dados presentes nos buffers da memória para o disco</li>
+                        <li>sort: Ordena, une ou compara texto, podendo ser usado para extrair informações dos arquivos de texto ou mesmo para ordenar dados de 
+                            outros comandos como por exemplo listar arquivos ordenados pelo nome</li>
+                        <li>tar: Cria ou extrai arquivos, muito usado como programa de backup ou compressão de arquivos</li>
+                        <li>tee: Copia o input para um standard output e outros arquivos</li>
+                        <li>tr: Traduz caracteres</li>
+                        <li>umask: Muda as proteções de arquivos</li>
+                        <li>uncompress: Restaura um arquivo comprimido</li>
+                        <li>uniq: Reporta ou apaga linhas repetidas num arquivo</li>
+                        <li>wc: Conta linhas, palavras e mesmo caracteres num arquivo</li>
+                    </ol>
+                </div>
+            </div>
+    </section>
+    </section>
+    
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+    </script>
+</body>
+</html>
