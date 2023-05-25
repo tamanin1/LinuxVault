@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;  
+    transition: 0.6s;
+}
+
+.logo {
+    font-size: 1.7em;
+    cursor: default;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.navigation a {
+    color: #fff;
+    font-size: 1.1em;
+    margin-left: 12px;
+    text-decoration: none;
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../IMGS/BG.jfif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.content {
+    color: #fff;
+    text-align: center;
+    letter-spacing: .1cm;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+h1 {
+    font-size: 3.5em;
+    padding-bottom: 30px;
+}
+
+.button {
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    transition: .3s;
+}
+
+button:hover {
+    background: #fff;
+    color: #0a0025;
+}
+
+.loginbar {
+    background-color: #134E75;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #134E75;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+.home .content {
+    max-width: 600px;
+    color: #fff;
+}
+
+.content h2 {
+    font-size: 3em;
+    letter-spacing: .03em;
+}
+
+.content p {
+    margin: 10px 0 40px;
+}
+
+.content a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+    transition: .5s;
+}
+
+.content a:hover {
+    background: #0c0a48;
+}
+
+.home .wrapper-login {
+    position: relative;
+    width: 440px;
+}
+
+.wrapper-login h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper-login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 5px 0 45px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    font-size: .8em;
+    top: -14px;
+    left: 17px
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.wrapper-login .remember-forgot {
+    font-size: .9em;
+    color: #fff;
+    margin: -25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #07041e;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-login .btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #0c0a48, #3f3690);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrapper-login .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper-login .register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #0c0a48;
+}
+
+header.sticky h2 {
+    color: #fff;
+}
+header.sticky nav a {
+    color: #fff;
+}
+header.sticky .navigation a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 275px;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+/*css for manual slide*/
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40d3dc;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40d3dc;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40d3dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40d3dc;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40d3dc;
+}
+
+/*footer css*/
+
+.socialmedia {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800;
+    justify-content: center;
+    display: flex;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.socialmedia .icons a {
+    align-content: space-between;
+    color: #fff;
+    text-decoration: none;
+    height: 20px;
+    padding: 4px;
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(../IMGS/BG.jfif);
+}
+.signup-box {
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+}
+
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+    display: flex;
+    margin-top: 8px;
+    font-size: 13px;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    color: #373535;
+}
+
+.cadastro {
+    margin-left: 77px;
+    width: 160px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    background: linear-gradient(to right, #01a9ac, #01dbdf);
+    color: #fff;
+    font-size: 18px;
+}
+
+.cadastro:hover {
+    background: linear-gradient(to right, #017375, #018d8f);
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+p a {
+    color: white;
+}
+
+.para-2 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.para-2 a {
+    color: white;
+}
